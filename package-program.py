@@ -2,9 +2,9 @@
 
 # Created by: Emmanuel
 # Created on: Oct 2022
-# This program accepts the weight of a 
-# package and calculates volume for company eligibility.
-# Using if and else statements.
+# This program accepts packages for a company
+# and decides if the package is acceptable or not.
+# This program uses if and else statements.
 
 import math
 
@@ -19,15 +19,27 @@ def main():
 
 
     # process and output
-    if (package > 27) or (package < 27) :
-       print("\n{0:,}kg is an acceptable weight, the company approves.".format(package))
+    if (package > 27) or (package < 27):
+        print(
+            "\n{0:,}kg is an approved weight, the company accepts package.".format(
+                package
+            )
+        )
     else:
-       print("\n{0:,}kg is an unacceptable weight, the company disapproves.".format(package))
-    volume = (package_length * package_width * package_height )
+        print(
+            "\n{0:,}kg is unapproved weight, the company rejects package.".format(
+                package
+            )
+        )
+    volume = package_length * package_width * package_height
     if volume <= 10000:
-       print("\n{0:,} cubic cm is acceptable, the company approves.".format(volume))
+        print(
+            "\n{0:,} cubic cm is approved, the company accepts package.".format(volume)
+        )
     else:
-       print("\n{0:,} cubic cm is unacceptable, the company disapproves.".format(volume))
+        print(
+            "\n{0:,} cubic cm is unapproved, the company rejects package".format(volume)
+        )
 
     print("\n\nDone.")
 
