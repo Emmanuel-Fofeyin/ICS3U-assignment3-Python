@@ -17,7 +17,6 @@ def main():
     package_width = int(input("Enter package width (cm): "))
     package_height = int(input("Enter package height (cm): "))
 
-
     # process and output
     if (package > 27) or (package < 27):
         print(
