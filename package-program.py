@@ -43,7 +43,7 @@ def main():
         )
     if package_weight == 27 or volume > 10000:
         print(
-            "\nSorry the company cannot accepted the package because its either equal to 27kg or larger than 10,000 cubic cm."
+            "\nSorry the company cannot accept the package because its either equal to 27kg or larger than 10,000 cubic cm."
         )
 
     print("\n\nDone.")
