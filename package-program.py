@@ -26,7 +26,7 @@ def main():
         )
     else:
         print(
-            "\n{0:,}kg is unapproved weight, the company rejects package.".format(
+            "\n{0:,}kg is an unapproved weight, the company rejects package.".format(
                 package_weight
             )
         )
